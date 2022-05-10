@@ -19,7 +19,7 @@
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
 
         <!-- add resources here -->
-        <mapping class ="org.example.models.Department"/>
+        <mapping class ="com.hibernate.models.Department"/>
 
     </session-factory>
 </hibernate-configuration>

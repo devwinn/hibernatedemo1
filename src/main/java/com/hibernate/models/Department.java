@@ -1,8 +1,10 @@
-package org.example.models;
+package com.hibernate.models;
 
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -16,7 +18,7 @@ import lombok.experimental.FieldDefaults;
 @Entity
 public class Department {
 
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     int did;
 
     @NonNull
